@@ -1,0 +1,12 @@
+body {
+    font-family: Helvetica Neue, Helvetica, Arial;
+}
+ul.thum {
+    list-style: none;
+    width: 50%;
+    float: left;
+    display: inline-block;
+}
+ul.thum li img {
+    width: 300px;
+}
