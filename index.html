@@ -11,16 +11,14 @@
     <p>You have reached le boxoffice.</p>
 </section>
 <section class="movies">
-    <video src="ftp://114.130.39.254/4A_TB/Others%20Language%20Movie/AMERICAN%20-%20GANGSTER(2007)/American%20Gangster(2007).mkv" controls autoplay></video>
-<!--<ul ng-repeat="movie in movies" class="thum">-->
-    <!--<li>Title : {{movie.title}}</li>-->
-    <!--<li>Category: {{movie.category}}</li>-->
-    <!--<li><img ng-src="{{movie.cover}}" alt=""/></li>-->
-    <!--<li>-->
-        <!--&lt;!&ndash;<a href="{{movie.file}}">Watch Now</a>&ndash;&gt;-->
-        <!--&lt;!&ndash;<video ng-src="{{movie.file}}" controls preload="metadata"></video>&ndash;&gt;-->
-    <!--</li>-->
-<!--</ul>-->
+<ul ng-repeat="movie in movies" class="thum">
+    <li>Title : {{movie.title}}</li>
+    <li>Category: {{movie.category}}</li>
+    <li><img ng-src="{{movie.cover}}" alt=""/></li>
+    <li>
+        <a href="{{movie.file}}">Watch Now</a>
+    </li>
+</ul>
 </section>
 
 <script src="vendros/angular.min.js"></script>

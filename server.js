@@ -12,7 +12,9 @@ app.use(bodyParser.json());
 
 
 router.get('/movies', function (req, res) {
-    moviedb.find({category: 'english'}).limit(20).exec(function (err, result) {
+    moviedb.find().limit(40).exec(function (err, result) {
+        console.info("::New Request::");
+        console.log(result);
         res.json(result);
     });
 });
